@@ -55,3 +55,32 @@ $(document).ready(function() {
     // Update the timer every second
     setInterval(updateTimer, 1000);
 });
+
+
+
+$(".show-more").click(function () {
+    if($(".text").hasClass("show-more-height")) {
+        $(this).text("(Show Less)");
+    } else {
+        $(this).text("(Show More)");
+    }
+
+    $(".text").toggleClass("show-more-height");
+});
+
+$(".show-more2").click(function () {
+    if($(".text").hasClass("show-more-height2")) {
+        $(this).text("(Show Less)");
+    } else {
+        $(this).text("(Show More)");
+    }
+    $(".text").toggleClass("show-more-height2");
+});
+$(".show-more3").click(function () {
+    if($(".text").hasClass("show-more-height3")) {
+        $(this).text("(Show Less)");
+    } else {
+        $(this).text("(Show More)");
+    }
+    $(".text").toggleClass("show-more-height3");
+});

@@ -1,6 +1,9 @@
 *{  
     font-family: "Nunito";
 }
+body{
+  background-color: #F3F3F3;
+}
 .textPrimary{
     color: #67676b;
 }
@@ -91,4 +94,89 @@ font-size: 1.25rem;
 .label {
     font-size: 12px;
     margin-top: 5px;
+}
+.heroBg{
+  background-color: #F2EFEA;
+}
+
+
+/* Ensure all cards have the same height */
+.card {
+  padding-top: 1rem;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Makes sure cards take up the full height of the container */
+}
+
+.card-body {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the content horizontally */
+  text-align: center; /* Center the text */
+}
+
+.card-img-top {
+  width: 4rem; /* Set width of the image */
+  height: 4rem; /* Set height of the image */
+  margin: 0 auto; /* Center the image horizontally */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Ensure the card has a consistent height */
+.card {
+  width: 100%;
+  max-width: 15rem; /* Set max width to ensure consistency */
+  margin-bottom: 1rem; /* Space between cards */
+}
+.cShadow{
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+.Tc , .cShadow h4{
+  color: #586A92;
+}
+.Why{
+  color: #B79D74;
+}
+.fixed-img {
+  position: fixed; /* Fix the position of the image */
+
+  width: 150px; /* Adjust width as needed */
+  z-index: 1000; /* Ensure the image stays above other content */
+}
+
+
+#profile-description,#profile-description2,#profile-description3 {
+  max-width: 400px; 
+  margin-top: 50px; 
+  position:relative;
+}
+#profile-description .text ,#profile-description2 .text,#profile-description3 .text {
+  margin-bottom: 5px; 
+  color: #777; 
+  padding: 0 15px; 
+  position:relative; 
+  font-size: 14px; 
+  display: block;
+}
+#profile-description .show-more, #profile-description2 .show-more2,#profile-description3 .show-more3 {
+/*   width: 690px;  */
+  color: #777; 
+  position:relative; 
+  font-size: 12px; 
+  padding-top: 5px; 
+  height: 20px; 
+  text-align: center; 
+  background: #f1f1f1; 
+  cursor: pointer;
+}
+#profile-description .show-more:hover { 
+    color: #1779dd;
+}
+#profile-description .show-more-height,#profile-description2 .show-more-height2,#profile-description3 .show-more-height3 { 
+  height: 150px; 
+  overflow:hidden; 
 }
