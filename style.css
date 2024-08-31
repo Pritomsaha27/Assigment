@@ -156,27 +156,32 @@ font-size: 1.25rem;
 }
 #profile-description .text ,#profile-description2 .text,#profile-description3 .text {
   margin-bottom: 5px; 
-  color: #777; 
+  color: #67676b;
   padding: 0 15px; 
   position:relative; 
-  font-size: 14px; 
+  font-size: 1rem; 
   display: block;
 }
 #profile-description .show-more, #profile-description2 .show-more2,#profile-description3 .show-more3 {
-/*   width: 690px;  */
-  color: #777; 
+color:rgb(29, 173, 231);
   position:relative; 
-  font-size: 12px; 
+  font-size: 1rem; 
   padding-top: 5px; 
-  height: 20px; 
-  text-align: center; 
-  background: #f1f1f1; 
+  height: 20px;  
   cursor: pointer;
 }
-#profile-description .show-more:hover { 
-    color: #1779dd;
+#profile-description .show-more:hover,#profile-description2 .show-more2:hover,#profile-description3 .show-more3:hover { 
+  color:rgb(98, 190, 227);
 }
 #profile-description .show-more-height,#profile-description2 .show-more-height2,#profile-description3 .show-more-height3 { 
-  height: 150px; 
+  height: 270px; 
   overflow:hidden; 
+}
+.accordion-item {
+  margin-bottom: 1.25rem; /* Adjust this value to create desired gaps */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.accordion-button:focus {
+  box-shadow: none; /* Removes the blue overlay */
+  background-color: white;
 }
