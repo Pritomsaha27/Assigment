@@ -1,0 +1,94 @@
+*{  
+    font-family: "Nunito";
+}
+.textPrimary{
+    color: #67676b;
+}
+.textHighlight{
+    color: #FD9F1A;
+}
+.textSpan{
+    color: #C77201;
+}
+.bgHighlight{
+    background-color: #FD9F1A;
+    color: white;
+}
+.fontXl{
+font-size: 1.25rem;
+}
+.fontLg{
+    font-size: 1rem;
+    
+}
+
+/* font sizes */
+@media (min-width: 576px) {
+    .fs-sm {
+      font-size: 0.85rem; 
+    }
+  }
+  
+  @media (min-width: 768px) { 
+    .fs-md {
+      font-size: 1rem; 
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .fs-lg {
+      font-size: 1.25rem; 
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .fs-xl {
+      font-size: 3rem; 
+    }
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .video-container iframe,
+  .video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #countdown {
+    display: flex;
+    gap: 10px;
+    color: white;
+}
+
+.time-block {
+    background-color:#FD9F1A;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    -webkit-border-radius: 50;
+    -moz-border-radius: 50;
+    -ms-border-radius: 50;
+    -o-border-radius: 50;
+}
+
+.label {
+    font-size: 12px;
+    margin-top: 5px;
+}
