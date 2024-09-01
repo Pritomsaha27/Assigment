@@ -4,7 +4,7 @@
 body{
   background-color: #F3F3F3;
 }
-.textPrimary{
+.textPrimary,#fourCards p{
     color: #67676b;
 }
 .textHighlight{
@@ -135,7 +135,7 @@ font-size: 1.25rem;
 .cShadow{
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
-.Tc , .cShadow h4{
+.Tc , .cShadow h4,#fourCards h4{
   color: #586A92;
 }
 .Why{
@@ -184,4 +184,78 @@ color:rgb(29, 173, 231);
 .accordion-button:focus {
   box-shadow: none; /* Removes the blue overlay */
   background-color: white;
+}
+.form{
+  background-color: #973751;
+  color: white;
+}
+
+
+/* Custom Styles */
+.custom-input {
+  background: none;
+  border-radius: 20px; /* Makes the fields more rounded */
+  border: 3px solid #ffffff;
+  padding: 10px;
+  color: #ffffff;
+  width: 100%; /* Full width on mobile */
+}
+
+.custom-input::placeholder {
+  color: #ffffff; /* Placeholder color */
+}
+
+.custom-input:focus {
+  border-color: #007bff; /* Change the border color on focus */
+  box-shadow: none;
+  outline: none;
+}
+
+/* Button Styles */
+.custom-submit-btn {
+  font-weight: bold;
+  width: 12rem;
+  height: 3.5rem;
+  background-color:white ;
+  border-radius: 25px; /* More rounded button */
+  color: #973751;
+  padding: 10px 20px;
+  border: none;
+  transition: background-color 0.3s;
+}
+.Btn{
+  color: goldenrod;
+}
+
+.form-check input{
+  width: 1rem;
+  height: 1rem;
+}
+.custom-submit-btn:hover {
+  background-color: #CC3852; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .form .d-flex {
+    flex-direction: column; /* Stack fields vertically */
+    gap: 0; /* Remove gap between fields */
+  }
+  
+  .form .col-md-4 {
+    width: 100%; /* Full width for input fields */
+  }
+  
+  .form .col-8 {
+    width: 100%; /* Full width for the problem input field */
+  }
+  
+  .text-center h1, .text-center h5 {
+    font-size: 1.5rem; /* Adjust heading sizes for mobile */
+  }
+}
+#fourCards img{
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1rem;
 }
