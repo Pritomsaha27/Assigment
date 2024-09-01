@@ -59,28 +59,40 @@ $(document).ready(function() {
 
 
 $(".show-more").click(function () {
-    if($(".text").hasClass("show-more-height")) {
+    var textElement = $(this).siblings('.text');
+
+    if (textElement.hasClass("show-more-height")) {
         $(this).text("Show Less");
+        textElement.removeClass("show-more-height");
     } else {
         $(this).text("Show More");
+        textElement.addClass("show-more-height");
     }
-
-    $(".text").toggleClass("show-more-height");
 });
 
+
+// For the second toggle
 $(".show-more2").click(function () {
-    if($(".text").hasClass("show-more-height2")) {
+    var textElement = $(this).siblings('.text');
+
+    if (textElement.hasClass("show-more-height2")) {
         $(this).text("Show Less");
+        textElement.removeClass("show-more-height2");
     } else {
         $(this).text("Show More");
+        textElement.addClass("show-more-height2");
     }
-    $(".text").toggleClass("show-more-height2");
 });
+
+// For the third toggle
 $(".show-more3").click(function () {
-    if($(".text").hasClass("show-more-height3")) {
+    var textElement = $(this).siblings('.text');
+
+    if (textElement.hasClass("show-more-height3")) {
         $(this).text("Show Less");
+        textElement.removeClass("show-more-height3");
     } else {
         $(this).text("Show More");
+        textElement.addClass("show-more-height3");
     }
-    $(".text").toggleClass("show-more-height3");
 });

@@ -120,8 +120,8 @@ font-size: 1.25rem;
 }
 
 .card-img-top {
-  width: 4rem; /* Set width of the image */
-  height: 4rem; /* Set height of the image */
+  width: 3rem; /* Set width of the image */
+  height: 3rem; /* Set height of the image */
   margin: 0 auto; /* Center the image horizontally */
   object-fit: cover; /* Maintain aspect ratio */
 }
@@ -129,12 +129,11 @@ font-size: 1.25rem;
 /* Ensure the card has a consistent height */
 .card {
   width: 100%;
-  max-width: 15rem; /* Set max width to ensure consistency */
-  margin-bottom: 1rem; /* Space between cards */
 }
 .cShadow{
   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
 }
+
 .Tc , .cShadow h4,#fourCards h4{
   color: #586A92;
 }
@@ -259,3 +258,7 @@ color:rgb(29, 173, 231);
   height: 3rem;
   margin-bottom: 1rem;
 }
+
+
+
+
